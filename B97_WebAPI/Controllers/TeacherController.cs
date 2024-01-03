@@ -13,6 +13,12 @@ namespace B97_WebAPI.Controllers
         {
             return GetTeachers();
         }
+        [HttpGet]
+        public TeacherModel GetTeacherByID(int id)
+        {
+            return GetTeachers().FirstOrDefault(x => x.TeacherId == id);
+        }
+
 
         private List<TeacherModel> GetTeachers()
         {
