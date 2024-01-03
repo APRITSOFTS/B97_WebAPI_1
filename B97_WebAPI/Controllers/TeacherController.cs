@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace B97_WebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")] // modified routing attribute to run swagger 
     [ApiController]
     public class TeacherController : ControllerBase
     {
